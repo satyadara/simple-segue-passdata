@@ -12,13 +12,13 @@ class SecondVC: UIViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     
-    var passedData: String!
+    var stringPassed: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        myLabel.text = passedData
+        myLabel.text = stringPassed
     }
 }
