@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zSu-yR-yKu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,23 +22,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-zA-mQc">
-                                <rect key="frame" x="16" y="28" width="343" height="130"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-zA-mQc">
+                                <rect key="frame" x="16" y="72" width="343" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-jG-N7L">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="saJ-KX-rsY">
-                                        <rect key="frame" x="0.0" y="50" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="40" width="343" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <pickerView contentMode="scaleToFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="dAN-pq-tRB">
+                                        <rect key="frame" x="11.5" y="80" width="320" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="7kn-z9-lHy"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="x9b-NA-xaR"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="pDh-9o-y8C"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="pct-o4-IYo"/>
+                                        </connections>
+                                    </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-7f-PmS">
-                                        <rect key="frame" x="147" y="100" width="49" height="30"/>
+                                        <rect key="frame" x="147" y="140" width="49" height="30"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
                                             <action selector="goToSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IC6-S0-IEc"/>
@@ -60,15 +71,17 @@
                             <constraint firstAttribute="trailingMargin" secondItem="5dC-zA-mQc" secondAttribute="trailing" id="ugj-4h-FsJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="s10-ij-Fih"/>
                     <connections>
                         <outlet property="firstName" destination="Uch-jG-N7L" id="NDq-nI-Y1J"/>
+                        <outlet property="hobbyPicker" destination="dAN-pq-tRB" id="Eih-R5-wEA"/>
                         <outlet property="lastName" destination="saJ-KX-rsY" id="0RI-1k-2ef"/>
                         <segue destination="xcu-n4-GJe" kind="show" identifier="goToSecondVC" id="dWV-8g-R9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+            <point key="canvasLocation" x="964" y="35.532233883058474"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="d3h-y8-gEa">
@@ -102,7 +115,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fu-bh-jzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1688.8" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vh9-a8-z80">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zSu-yR-yKu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2ws-yW-2o7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hNC-Fq-3hV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEX-wI-Spo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>
