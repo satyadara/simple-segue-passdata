@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC1FA9E01F25AD6A0089F344"
-               BuildableName = "PassingData.app"
-               BlueprintName = "PassingData"
-               ReferencedContainer = "container:PassingData.xcodeproj">
+               BlueprintIdentifier = "DCC73DD21F4F0CE7007BA949"
+               BuildableName = "User Interface.app"
+               BlueprintName = "User Interface"
+               ReferencedContainer = "container:User Interface.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC1FA9E01F25AD6A0089F344"
-            BuildableName = "PassingData.app"
-            BlueprintName = "PassingData"
-            ReferencedContainer = "container:PassingData.xcodeproj">
+            BlueprintIdentifier = "DCC73DD21F4F0CE7007BA949"
+            BuildableName = "User Interface.app"
+            BlueprintName = "User Interface"
+            ReferencedContainer = "container:User Interface.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC1FA9E01F25AD6A0089F344"
-            BuildableName = "PassingData.app"
-            BlueprintName = "PassingData"
-            ReferencedContainer = "container:PassingData.xcodeproj">
+            BlueprintIdentifier = "DCC73DD21F4F0CE7007BA949"
+            BuildableName = "User Interface.app"
+            BlueprintName = "User Interface"
+            ReferencedContainer = "container:User Interface.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC1FA9E01F25AD6A0089F344"
-            BuildableName = "PassingData.app"
-            BlueprintName = "PassingData"
-            ReferencedContainer = "container:PassingData.xcodeproj">
+            BlueprintIdentifier = "DCC73DD21F4F0CE7007BA949"
+            BuildableName = "User Interface.app"
+            BlueprintName = "User Interface"
+            ReferencedContainer = "container:User Interface.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PassingData
+//  User Interface
 //
-//  Created by Satya Syahputra on 7/24/17.
+//  Created by Satya Syahputra on 8/24/17.
 //  Copyright © 2017 Satya Syahputra. All rights reserved.
 //
 
